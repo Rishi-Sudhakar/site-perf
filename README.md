@@ -72,7 +72,7 @@ window.onload = () => {
 ### Project Structure
 
 ```
-perf-monitor/
+site-perf/
 ├── index.html
 ├── index.js
 ├── node_modules/
