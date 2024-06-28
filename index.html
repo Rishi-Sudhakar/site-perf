@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Performance Monitor</title>
+  <script src="node_modules/chart.js/dist/chart.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+  <div style="width: 80%; margin: 50px auto;">
+    <canvas id="perfChart" width="400" height="400"></canvas>
+  </div>
+  <script>
+    const PerfMonitor = require('./index');
+    const perfMonitor = new PerfMonitor();
+    perfMonitor.collectMetrics();
+    window.onload = () => {
+      perfMonitor.visualizeMetrics();
+      console.log(perfMonitor.exportMetrics());
+    };
+  </script>
+</body>
+</html>
