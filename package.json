@@ -1,15 +1,14 @@
 {
-  "name": "perf-monitor",
+  "name": "site-perf",
   "version": "1.0.0",
+  "description": "A performance monitoring tool",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "Rishi",
+  "license": "MIT",
   "dependencies": {
-    "chart.js": "^4.4.3"
+    "chart.js": "^3.5.1"
   }
 }
